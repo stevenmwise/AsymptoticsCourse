@@ -1,0 +1,136 @@
+    \documentclass[12pt]{letter}
+    \textwidth=6.25in
+    \textheight=8.75in
+    \footskip=1in
+    \oddsidemargin=0in
+    \topmargin=-1.0in
+    \usepackage{amssymb}
+    \usepackage{amsmath}
+	\usepackage{cmbright}
+	\usepackage{color}
+
+    \include{NAMacros}
+	
+    \begin{document}
+    \begin{center}
+{\LARGE\sc Homework 01, Math 515 \\ 15 February, 2024}
+	\end{center}
+	
+	\bigskip
+
+{\Large\bf\sc Name:}
+	\\
+    \bigskip
+    \line(1,0){200}
+    \\
+	\begin{enumerate}
+	
+	\item
+Suppose that $f(\varepsilon) = 1-\cos^2(\varepsilon)$, for $\varepsilon >0$. 
+	\begin{enumerate}
+	\item
+Show that
+	\[
+f(\varepsilon) = O(\varepsilon^2), \quad \mbox{as}\quad\varepsilon\searrow 0.	
+	\]
+	\item
+Show that
+	\[
+f(\varepsilon) = o(\varepsilon), \quad \mbox{as}\quad\varepsilon\searrow 0.	
+	\]
+	\end{enumerate}
+	
+	\item
+Show that
+	\[
+\log(1+\varepsilon) = O(\varepsilon)	, \quad \mbox{as}\quad\varepsilon\searrow 0.
+	\]
+
+	\item
+Consider the problem
+	\[
+y'(t) + y(t) = \varepsilon y^2(t), \quad y(0) = 1,	
+	\]
+for $t\ge 0$, and $\varepsilon >0$.
+	\begin{enumerate}
+	\item
+Determine a three-term expansion for small $\varepsilon>0$ using the perturbation approach. Assume the standard asymptotic power series approximation is valid, as $\varepsilon\searrow 0$.
+
+	\item
+Show that the exact solution is
+	\[
+y(t) = e^{-t}\left[ 1+ \varepsilon(e^{-t}-1)\right]^{-1}.	
+	\]
+	
+	\item
+Expand the exact solution for small $\varepsilon$ and compare with the result from part (a).
+
+	\item
+Are the expansions you obtained valid for all $t\ge 0$?
+
+	\end{enumerate}
+	
+	\item
+Consider the solution of the equation
+	\[
+y'(x) + y(x) = \frac{1}{x},	
+	\]
+for $x>0$. In seeking an approximation for large $x$, assume that 
+	\[
+y(x) \sim \sum_{k=1}^\infty  \frac{a_k}{x^k}, \quad \mbox{as} \quad  x\nearrow\infty.	
+	\]
+	\begin{enumerate}
+	\item
+Substitute this expansion into the equation to determine the coefficients. 
+
+	\item
+Does the series you have produced converge? 
+	\end{enumerate}
+	
+	\item
+Consider the van der Pol oscillator problem:
+	\[
+u''(t) +u(t) = \varepsilon(1-u^2(t)) u'(t),	
+	\]
+for $t\ge 0$ and $\varepsilon >0$. Suppose that
+	\[
+u(t,\varepsilon) \sim \sum_{k=0}^\infty u_k(t)\varepsilon^k , \quad \mbox{as} \quad \varepsilon\searrow 0.	
+	\]
+	\begin{enumerate}
+	\item
+Substitute this expansion in the differential equation and find $u_0$ and $u_1$ for general initial data.
+
+	\item
+Plot your two-term composite approximate solution for a couple of interesting initial data choices.
+	\end{enumerate}
+	
+	\item
+Determine the second-order (three term) asymptotic expansion for the solution of 
+	\[
+u''(t) + u(t) = \varepsilon u^2(t),
+	\]
+for $t\ge 0$, with $u(0) = a$ and $u'(0) = 0$, as $\varepsilon \searrow 0$. Is this expansion uniformly valid for $t\ge 0$? If not, can you restrict the domain of the solution/approximation so that it is? 
+	
+	
+	\item
+Find an asymptotic series expansion for the integral
+	\[
+I(\lambda) = \lambda\int_0^\infty \frac{e^{-t}}{\lambda + t} \, \mathrm{d} t,	
+	\]
+as $\lambda\nearrow \infty$.
+
+	\item
+Suppose that 
+	\[
+f(\lambda) \sim \sum_{k =0}^\infty \frac{a_k}{\lambda^k}, \quad \mbox{as} \quad \lambda \nearrow \infty.	
+	\]
+	\begin{enumerate}
+	\item
+Find the first few terms in the asymptotic expansion, as $\lambda\to\infty$ of $\frac{1}{f(\lambda)}$.
+	\item
+Find the first few terms in the asymptotic expansion, as $\lambda\to\infty$ of $p(f(\lambda))$, where $p$ is a polynomial.
+	\end{enumerate}
+	
+	\end{enumerate}
+	
+    \end{document}
